@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dobrodošli!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="slike/slika.ico" />
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#">O nama</a></li>
+      <li class="nav-item"><a href="cenovnik.html">Cenovnik</a></li>
+      <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="navbar-logo">
+      <img class="logo" src="slike/logo.jpg">
+    </div>
+
+  </div>
+
+  <div id="real-time">
+    <p>Trenutno vreme i datum: <span id="current-time"></span></p>
+  </div>
+
+
+  <div class="hero-image">
+
+    <div class="hero-card">
+      <h1>Dobrodošli na sajt Chinchilla Land kompanije!</h1>
+      <a href="kontakt.html"> KONTAKTIRAJTE NAS </a>
+    </div>
+  </div>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/45d2719d83/novi-sad/" data-label_1="NOVI SAD"
+    data-label_2="WEATHER" data-theme="original">NOVI SAD WEATHER</a>
+  <script>
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+  </script>
+
+  <div class="detalji">
+    <div class="o_nama">
+      <div class="login-form">
+        <h2>Prijavite se</h2>
+        <form id="loginForm">
+          <label for="username">Korisničko ime:</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Lozinka:</label><br>
+          <input type="password" id="password" name="password"><br><br>
+          <button type="button" onclick="login()">Prijavi se</button>
+          <button id="cancel-btn" onclick="odustani()">Odustani</button>
+        </form>
+        <p id="loginStatus"></p>
+      </div>
+
+      <div class="visit-counter">
+        Posete: <span id="visit-count">0</span>
+      </div>
+
+
+      <h2>O nama</h2>
+      <p>Kompanija je osnovana davne 2002. godine, s ciljem da udomimo nezbrinute činčile. Od tada smo se proširili na
+        mnogobrojna mesta širom sveta. Chinchilla Land nije obična farma već je pravo malo carstvo za činčile. Stvorili
+        smo ogromne volijere sa specijalno
+        dizajniranim prostorima koji su simulirali prirodno okruženje činčila. Drveni tuneli, visoki drveni stubovi, i
+        ugodna mekana podloga bili su deo svakog staništa.
+        Svaka činčila ima svoj prostor za igru, trčanje i penjanje. </p>
+      <h2 class="nase_usluge">Naše usluge</h2>
+    </div>
+
+    <div class="usluge">
+
+
+      <div class="kartica">
+        <img src="slike/udomljavanje.jpg">
+        <h2>UDOMLJAVANJE</h2>
+        <a href="cenovnik.html">Saznaj više</a>
+      </div>
+
+      <div class="kartica">
+        <img src="slike/cuvanje.jpg">
+        <h2>ČUVANJE</h2>
+        <a href="cenovnik.html">Saznaj više</a>
+      </div>
+
+      <div class="kartica">
+        <img src="slike/parenje.jpg">
+        <h2>PARENJE</h2>
+        <a href="cenovnik.html">Saznaj više</a>
+      </div>
+
+      <div class="kartica">
+        <img src="slike/prodaja.png">
+        <h2>PRODAJA</h2>
+        <a href="cenovnik.html">Saznaj više</a>
+      </div>
+
+    </div>
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+
+        <button class="accordion">Kako mogu kontaktirati Chinchilla Land kompaniju?</button>
+        <div class="panel">
+          <p>Možete nas kontaktirati putem naše stranice <a href="kontakt.html">Kontakt</a>, ili putem telefona na broj:
+            123-456-789.</p>
+        </div>
+
+        <button class="accordion">Koje su usluge koje pruža Chinchilla Land?</button>
+        <div class="panel">
+          <p>Naše usluge uključuju udomljavanje činčila, čuvanje, parenje i prodaju. Više detalja možete pronaći na
+            našoj stranici <a href="cenovnik.html">Cenovnik</a>.</p>
+        </div>
+
+        <button class="accordion">Kako mogu saznati više o činčilama koje želim udomiti?</button>
+        <div class="panel">
+          <p>Naš tim će vam rado pružiti sve potrebne informacije o karakteristikama, potrebama i pravilnoj brizi za
+            činčile koje želite udomiti. Možete nas kontaktirati putem e-pošte ili telefona.</p>
+        </div>
+
+        <button class="accordion">Koje vrste hrane preporučujete za činčile?</button>
+        <div class="panel">
+          <p>Preporučujemo kvalitetnu činčila hranu koja sadrži sve potrebne hranljive sastojke. Takođe možemo dati
+            savete o voću, povrću i drugim dodacima ishrani koje činčile mogu jesti.</p>
+        </div>
+
+        <button class="accordion">Koja je razlika između mužjaka i ženki činčila?</button>
+        <div class="panel">
+          <p>Mužjaci i ženke činčila mogu imati različite osobine i potrebe. Naši stručnjaci će vam pružiti savete o
+            odabiru činčila koji odgovara vašim preferencijama i okruženju.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+  <div class="animacija">
+    <div class="cincila1"><img src="slike/animacija levo.png"></div>
+    <div class="cincila2"><img src="slike/animacija.png"></div>
+  </div>
+
+  <div class="scrolling-text-container">
+    <div class="scrolling-text">
+      Dobrodošli na sajt Chinchilla Land kompanije!
+    </div>
+  </div>
+
+</body>
+
+</html>

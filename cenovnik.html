@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="slike/slika.ico" />
+    <title>Cenovnik</title>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">O nama</a></li>
+            <li class="nav-item"><a href="#">Cenovnik</a></li>
+            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="navbar-logo">
+            <button onclick="promenaStila()">Promeni pozadinu i font</button>
+            <img class="logo" src="slike/logo.jpg">
+        </div>
+
+    </div>
+    <div id="stil" class="tabele">
+        <div id="real-time">
+            <p>Trenutno vreme i datum: <span id="current-time"></span></p>
+        </div>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/45d2719d83/novi-sad/" data-label_1="NOVI SAD"
+            data-label_2="WEATHER" data-theme="original">NOVI SAD WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
+        <h1 id="naslov"> Dostupne boje </h1>
+
+        <div class="dostupne_boje">
+
+            <div class="kartica_boja">
+                <img src="slike/pink_white.jpg">
+                <div class="info">
+                    <h2>Belo-Roze</h2>
+                    <h3>Cena: 8.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/white_mosaic.jpg">
+                <div class="info">
+                    <h2>Mozaik-Bela</h2>
+                    <h3>Cena: 9.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/gray.jpg">
+                <div class="info">
+                    <h2>Siva</h2>
+                    <h3>Cena: 6.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/blue_diamond.jpg">
+                <div class="info">
+                    <h2>Plava</h2>
+                    <h3>Cena: 9.500RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/violet.jpg">
+                <div class="info">
+                    <h2>Ljubičasta</h2>
+                    <h3>Cena: 11.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/black_velvet.jpg">
+                <div class="info">
+                    <h2>Velvet-Crna</h2>
+                    <h3>Cena: 7.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/ebony.jpg">
+                <div class="info">
+                    <h2>Crna</h2>
+                    <h3>Cena: 7.500RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/brown.png">
+                <div class="info">
+                    <h2>Smeđa</h2>
+                    <h3>Cena: 10.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/beige.png">
+                <div class="info">
+                    <h2>Bež</h2>
+                    <h3>Cena: 9.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_boja">
+                <img src="slike/goldbar.jpg">
+                <div class="info">
+                    <h2>Zlatna</h2>
+                    <h3>Cena: 9.500RSD</h3>
+                </div>
+            </div>
+        </div>
+               
+        <h2 id="usluge"> Dostupne usluge </h2>
+
+        <div class="dostupne_usluge">
+
+            <div class="kartica_usluga">
+                <img src="slike/udomljavanje.jpg">
+                <div class="info">
+                    <h2>Udomljavanje</h2>
+                </div>
+            </div>
+
+            <div class="kartica_usluga">
+                <img src="slike/cuvanje.jpg">
+                <div class="info">
+                    <h2>Čuvanje</h2>
+                </div>
+            </div>
+
+            <div class="kartica_usluga">
+                <img src="slike/parenje.jpg">
+                <div class="info">
+                    <h2>Parenje</h2>
+                </div>
+            </div>
+
+            <div class="kartica_usluga">
+                <img src="slike/prodaja.png">
+                <div class="info">
+                    <h2>Prodaja</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h2 id="proizvodi"> Ostali proizvodi </h2>
+
+        <div class="ostali_proizvodi">
+
+
+            <div class="kartica_proizvoda">
+                <img src="slike/kavez.jpg">
+                <div class="info">
+                    <h2>Kavez</h2>
+                    <h3>Cena: 12.000RSD</h3>
+                </div>
+            </div>
+
+            <div class="kartica_proizvoda">
+                <img src="slike/hrana.jpg">
+                <div class="info">
+                    <h2>Hrana</h2>
+                    <h3>Cena: 1.000RSD/kg</h3>
+                </div>
+            </div>
+
+            <div class="kartica_proizvoda">
+                <img src="slike/piljevina.jpg">
+                <div class="info">
+                    <h2>Piljevina</h2>
+                    <h3>Cena: 500RSD/kg</h3>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="hrana">HRANA U PONUDI:</h2>
+
+        <div class="hrana">
+            <button onclick="prethodnaSlika()">Prethodna</button>
+            <img id="slika" src="slike/image1.jpg" alt="Prva slika">
+            <button onclick="sledecaSlika()">Sledeća</button>
+        </div>
+        <p id="cena"></p>
+
+        <div class="kalkulator">
+            <h2>Kalkulator hrane za činčile</h2>
+            <p>Unesite težinu Vaše činčile u kilogramima:</p>
+            <input type="text" id="kilogrami">
+            <button onclick="izracunaj()">Izračunaj</button>
+            <p id="rezultat"></p>
+        </div>
+        <div class="briga">
+            <h2> Unesite ime vaše činčile: </h2>
+            <input type="text" id="ime-cincile"><br><br>
+            <button onclick="pokreniBrisanje()">Kako da se brinem o činčili?</button>
+            <div id="briga-o-cincili"></div>
+        </div>
+
+        <script src="script.js"></script>
+        <div class="animacija">
+            <div class="cincila1"><img src="slike/animacija levo.png"></div>
+            <div class="cincila2"><img src="slike/animacija.png"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
