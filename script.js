@@ -161,18 +161,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('visitCount')) {
-      let count = parseInt(localStorage.getItem('visitCount'));
-      count++;
-      document.getElementById('visit-count').textContent = count;
-      localStorage.setItem('visitCount', count);
-    } else {
-      localStorage.setItem('visitCount', 1);
-      document.getElementById('visit-count').textContent = 1;
-    }
-  });
-
   function updateClock() {
     var now = new Date();
     var hours = now.getHours();
