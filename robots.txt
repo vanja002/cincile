@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-sitemap:https://vanja002.github.io/cincile/sitemap.xml
+Allow: /
+Sitemap: https://vanja002.github.io/cincile/sitemap.xml
